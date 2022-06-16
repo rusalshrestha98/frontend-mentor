@@ -1,11 +1,13 @@
+import styles from './RatingButton.module.css';
+
 const RatingButton = () => {
   return (
     <div>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <button className={styles.button}>1</button>
+      <button className={styles.button}>2</button>
+      <button className={styles.button}>3</button>
+      <button className={styles.button}>4</button>
+      <button className={styles.button}>5</button>
     </div>
   )
 }
