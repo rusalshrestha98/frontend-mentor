@@ -1,7 +1,9 @@
+import styles from './SubmitButton.module.css';
+
 const SubmitButton = () => {
   return (
     <div>
-      <button>Submit</button>
+      <button className={styles.button}>Submit</button>
     </div>
   )
 }
