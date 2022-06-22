@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './SelectRating.module.css';
 import CircleButton from '../CircleButton/CircleButton';
 import RatingButtons from '../RatingButtons/RatingButtons';
@@ -5,6 +6,12 @@ import SubmitButton from '../SubmitButton/SubmitButton';
 
 
 const SelectRating = () => {
+  const [rating, setRating] = useState(null);
+
+  const submitRatingHandler = () => {
+    console.log("hey rus");
+  };
+
   return (
     <div>
       <CircleButton>
@@ -15,7 +22,7 @@ const SelectRating = () => {
       <h1 className={styles.header}>How did we do?</h1>
       <p className={styles.body}>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <RatingButtons />
-      <SubmitButton />
+      <SubmitButton onClick={submitRatingHandler}/>
     </div>
   )
 }
